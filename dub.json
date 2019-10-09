@@ -1,6 +1,6 @@
  
 {
-	"name": "vibed-elastic-logger",
+	"name": "vibed-datadog-logger",
 	"authors": [
 		"Emsi"
 	],
