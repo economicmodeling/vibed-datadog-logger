@@ -122,8 +122,6 @@ private:
 
 		immutable url = format!"%s/v1/input/%s"(datadogInfo.ingestEndpoint, datadogInfo.apiKey);
 
-		writeln(url);
-
         version(debug_datadog_logger)
         {
             () @trusted { stderr.writeln("\033[01;33m", url, "\033[0m"); }();
@@ -149,7 +147,7 @@ private:
 
         }
         requestBody.put(`]`);
-        writeln(requestBody.data);
+
 		version(debug_datadog_logger)
         {
             () @trusted { stderr.writeln("\033[01;33m", requestBody.data, "\033[0m"); }();
