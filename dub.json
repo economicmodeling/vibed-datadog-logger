@@ -1,0 +1,34 @@
+ 
+{
+	"name": "vibed-elastic-logger",
+	"authors": [
+		"Emsi"
+	],
+	"dependencies": {
+		"vibe-d": "~>0.8.2"
+	},
+    "targetType": "library",
+    "subPackages": [
+        {
+            "name": "test",
+            "targetType": "executable",
+            "sourcePaths": [
+                "source",
+                "test"
+            ],
+            "importPaths": [
+                "source",
+                "test"
+            ],
+            "dependencies": {
+                "vibe-d": "~>0.8.2"
+            },
+            "versions": [
+                "debug_datadog_logger"
+            ]
+        }
+    ],
+	"description": "Vibe.d logger implementation for Datadog",
+	"copyright": "Copyright © 2019, Emsi",
+	"license": "MIT"
+}
